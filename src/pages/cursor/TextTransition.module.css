@@ -1,0 +1,25 @@
+.text-transition {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: fit-content;
+  min-width: fit-content;
+}
+.text-transition-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--bg-white);
+}
+.text-transition-text-hide {
+  /* background-color: red; */
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
