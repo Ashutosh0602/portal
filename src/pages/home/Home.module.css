@@ -37,6 +37,7 @@
 .home_main div:nth-child(3) {
   background: linear-gradient(to right, #ffffff, #a46d02 50%);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
 }
 .home_robot {
