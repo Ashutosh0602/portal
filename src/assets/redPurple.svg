@@ -1,0 +1,26 @@
+<svg width="2752" height="2596" viewBox="0 0 2752 2596" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_bf_219_54)">
+<ellipse cx="1111.37" cy="1123.97" rx="223.5" ry="210.5" transform="rotate(84.0955 1111.37 1123.97)" fill="#D7001A"/>
+<path d="M852.257 1150.77C867.501 1298.16 993.637 1411.1 1139.51 1396.02C1285.38 1380.93 1385.74 1244.57 1370.49 1097.17C1355.25 949.772 1229.11 836.833 1083.24 851.919C937.367 867.005 837.013 1003.37 852.257 1150.77Z" stroke="#D7001A" stroke-width="100"/>
+</g>
+<g filter="url(#filter1_bf_219_54)">
+<ellipse cx="1481.49" cy="1345.97" rx="349.716" ry="370.449" transform="rotate(84.0955 1481.49 1345.97)" fill="#5500A9"/>
+<path d="M1063.27 1389.22C1086.25 1611.47 1294.37 1767.17 1522.61 1743.56C1750.84 1719.96 1922.69 1524.96 1899.71 1302.72C1876.72 1080.47 1668.61 924.769 1440.37 948.373C1212.13 971.977 1040.29 1166.97 1063.27 1389.22Z" stroke="#5500A9" stroke-width="100"/>
+</g>
+<defs>
+<filter id="filter0_bf_219_54" x="0.742188" y="0.546692" width="2221.27" height="2246.84" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="44"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_219_54"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_219_54" result="shape"/>
+<feGaussianBlur stdDeviation="400" result="effect2_foregroundBlur_219_54"/>
+</filter>
+<filter id="filter1_bf_219_54" x="211.188" y="96.0226" width="2540.6" height="2499.89" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="44"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_219_54"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_219_54" result="shape"/>
+<feGaussianBlur stdDeviation="400" result="effect2_foregroundBlur_219_54"/>
+</filter>
+</defs>
+</svg>

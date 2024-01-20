@@ -15,15 +15,28 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import homeSVG from "../../assets/homegrainy.svg";
 import roboto from "../../assets/robot.svg";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useDragControls } from "framer-motion";
 import Robot from "./robot/Robot";
+import ProjectsHome from "./projectsHome/ProjectsHome";
+import ExperienceHome from "./experienceHome/ExperienceHome";
+import BlogHome from "./blogHome/BlogHome";
 
 function Home() {
   const homeREF = useRef<DOMRect | null>(null);
+  const blogREF = useRef<HTMLDivElement | null>(null);
+
+  const [blogWidth, setblogWidth] = useState<number>();
+  const [blogheight, setblogheight] = useState<number>();
+
+  useEffect(() => {
+    setblogWidth(blogREF.current?.clientWidth);
+    setblogheight(blogREF.current?.clientHeight);
+    console.log(blogREF.current?.clientWidth);
+  }, []);
 
   function mouseLeave(content: DOMRect | any) {
-    // content.current = null;
+    content.current = null;
   }
 
   function mouseEnter(content: DOMRect | any, ev: any) {
@@ -44,6 +57,11 @@ function Home() {
     ev.currentTarget.style.setProperty("--x", `${xPercentage * 100}%`);
     ev.currentTarget.style.setProperty("--y", `${yPercentage * 100}%`);
   }
+
+  type blogDimension = {
+    blogWidth: number;
+    blogheight: number;
+  };
 
   return (
     <Transition>
@@ -100,7 +118,11 @@ function Home() {
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger style={{ padding: 0, margin: 0 }}>
-                        <Link className="textlink" to="https://rb.gy/028xr0">
+                        <Link
+                          target="_blank"
+                          className="textlink"
+                          to="https://rb.gy/028xr0"
+                        >
                           <IoNewspaperOutline
                             style={{
                               width: "1.5rem",
@@ -131,6 +153,7 @@ function Home() {
                     <Tooltip>
                       <TooltipTrigger style={{ padding: 0, margin: 0 }}>
                         <Link
+                          target="_blank"
                           className="textlink"
                           to="https://www.linkedin.com/in/ashutosh-rai-b75aa622a/"
                         >
@@ -219,11 +242,14 @@ function Home() {
           onMouseLeave={() => mouseLeave(homeREF)}
           onMouseEnter={(ev) => mouseEnter(homeREF, ev)}
           onMouseMove={(ev) => mouseMove(homeREF, ev)}
+          ref={blogREF}
           className={
             classes.home_blog +
             " transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
           }
-        ></div>
+        >
+          <BlogHome data={[blogWidth, blogheight]} />
+        </div>
         <div
           onMouseLeave={() => mouseLeave(homeREF)}
           onMouseEnter={(ev) => mouseEnter(homeREF, ev)}
@@ -232,16 +258,20 @@ function Home() {
             classes.home_projects +
             " transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
           }
-        ></div>
+        >
+          <ProjectsHome />
+        </div>
         <div
           onMouseLeave={() => mouseLeave(homeREF)}
           onMouseEnter={(ev) => mouseEnter(homeREF, ev)}
           onMouseMove={(ev) => mouseMove(homeREF, ev)}
           className={
             classes.home_experience +
-            " transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
+            " relative transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
           }
-        ></div>
+        >
+          <ExperienceHome />
+        </div>
       </section>
     </Transition>
   );

@@ -56,19 +56,22 @@
   border-radius: 1rem;
   overflow: hidden;
 }
-.home_projects {
+.home_experience {
   background-color: #1b1b1b;
   grid-row: 13/21;
   grid-column: 6/12;
   border-radius: 1rem;
   overflow: hidden;
 }
-.home_experience {
+.home_projects {
   background-color: #1b1b1b;
   grid-row: 10/21;
   grid-column: 12/16;
   border-radius: 1rem;
   overflow: hidden;
+}
+.home_projects:hover .project_cover {
+  display: none;
 }
 
 /* @media all and (max-width: 800px) {
