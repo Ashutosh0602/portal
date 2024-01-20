@@ -1,19 +1,24 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Home from "./pages/home/Home";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Blog from "./pages/blog/Blog";
+import Experience from "./pages/experience/Experience";
+import Project from "./pages/project/Project";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const location = useLocation();
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Home /> */}
-      </Routes>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.key}>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/project" element={<Project />} />
+          {/* <Home /> */}
+        </Routes>
+      </AnimatePresence>
     </>
   );
 }

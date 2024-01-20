@@ -14,13 +14,14 @@ import { IoNewspaperOutline } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import homeSVG from "../../assets/homegrainy.svg";
-import roboto from "../../assets/robot.svg";
+// import roboto from "../../assets/robot.svg";
 import { useEffect, useRef, useState } from "react";
-import { motion, useDragControls } from "framer-motion";
+// import { motion, useDragControls } from "framer-motion";
 import Robot from "./robot/Robot";
 import ProjectsHome from "./projectsHome/ProjectsHome";
 import ExperienceHome from "./experienceHome/ExperienceHome";
 import BlogHome from "./blogHome/BlogHome";
+import ContainerWrap from "../cursor/ContainerWrap";
 
 function Home() {
   const homeREF = useRef<DOMRect | null>(null);
@@ -58,10 +59,10 @@ function Home() {
     ev.currentTarget.style.setProperty("--y", `${yPercentage * 100}%`);
   }
 
-  type blogDimension = {
-    blogWidth: number;
-    blogheight: number;
-  };
+  //   type blogDimension = {
+  //     blogWidth: number;
+  //     blogheight: number;
+  //   };
 
   return (
     <Transition>
@@ -75,157 +76,162 @@ function Home() {
             " relative transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
           }
         >
-          <div
-            className="flex flex-col justify-between h-full absolute pb-6"
-            style={{ zIndex: 1 }}
-          >
-            <div>
-              <div>I’m a</div>
-              <div>disciplined-DEVELOPER</div>
+          <ContainerWrap>
+            <div
+              className="flex flex-col justify-between w-full h-full absolute pb-6"
+              style={{ zIndex: 1 }}
+            >
               <div>
-                Writing Code to solve a solution — using coding language just as
-                a tool
-              </div>
-            </div>
-            <div className="flex justify-between">
-              <div className="flex justify-center items-center">
+                <div>I’m a</div>
+                <div>disciplined-DEVELOPER</div>
                 <div>
-                  <Link className="textlink" to="/">
-                    <Badge
-                      className="textlink"
-                      style={{
-                        padding: 0,
-                        fontFamily: "Roboto",
-                        backgroundColor: "#121212",
-                        paddingRight: "0.5rem",
-                      }}
-                    >
-                      <Avatar
+                  Writing Code to solve a solution — using coding language just
+                  as a tool
+                </div>
+              </div>
+              <div className="flex justify-between">
+                <div className="flex justify-center items-center">
+                  <div>
+                    <Link className="textlink" to="/">
+                      <Badge
+                        className="textlink"
                         style={{
+                          padding: 0,
+                          fontFamily: "Roboto",
                           backgroundColor: "#121212",
-                          border: "1px solid gray",
-                          marginRight: "0.4rem",
+                          paddingRight: "0.5rem",
                         }}
                       >
-                        <AvatarImage src={badgeAR} alt="Ashutosh Rai" />
-                        <AvatarFallback>AR</AvatarFallback>
-                      </Avatar>
-                      Ashutosh Rai
-                    </Badge>
+                        <Avatar
+                          style={{
+                            backgroundColor: "#121212",
+                            border: "1px solid gray",
+                            marginRight: "0.4rem",
+                          }}
+                        >
+                          <AvatarImage src={badgeAR} alt="Ashutosh Rai" />
+                          <AvatarFallback>AR</AvatarFallback>
+                        </Avatar>
+                        Ashutosh Rai
+                      </Badge>
+                    </Link>
+                  </div>
+                  <div>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger style={{ padding: 0, margin: 0 }}>
+                          <Link
+                            target="_blank"
+                            className="textlink"
+                            to="https://rb.gy/028xr0"
+                          >
+                            <IoNewspaperOutline
+                              style={{
+                                width: "1.5rem",
+                                transform: "translateY(30%)",
+                                marginLeft: "1rem",
+                                //   fill: "gray",
+                                color: "gray",
+                              }}
+                            />
+                          </Link>
+                        </TooltipTrigger>
+                        <TooltipContent
+                          style={{
+                            transform: "translateY(200%)",
+                            borderRadius: 0,
+                            padding: 0,
+                          }}
+                        >
+                          <p style={{ fontSize: "0.8rem", color: "black" }}>
+                            Resume
+                          </p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
+                  <div>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger style={{ padding: 0, margin: 0 }}>
+                          <Link
+                            target="_blank"
+                            className="textlink"
+                            to="https://www.linkedin.com/in/ashutosh-rai-b75aa622a/"
+                          >
+                            <CiLinkedin
+                              style={{
+                                width: "1.5rem",
+                                transform: "translateY(30%)",
+                                marginLeft: "1rem",
+                              }}
+                            />
+                          </Link>
+                        </TooltipTrigger>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
+                  <div>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger style={{ padding: 0, margin: 0 }}>
+                          <Link
+                            target="_blank"
+                            className="textlink"
+                            to="https://github.com/Ashutosh0602"
+                          >
+                            <FaGithub
+                              style={{
+                                width: "1.5rem",
+                                transform: "translateY(30%)",
+                                marginLeft: "1rem",
+                              }}
+                            />
+                          </Link>
+                        </TooltipTrigger>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </div>
+                </div>
+                <div
+                  className=""
+                  style={{
+                    fontSize: "1rem",
+                    fontWeight: 300,
+                    transform: "translateY(12%)",
+                    // width:
+                  }}
+                >
+                  <Link
+                    style={{
+                      borderBottom: "1px solid gray",
+                      marginRight: "2rem",
+                    }}
+                    className="textlink"
+                    to="/about"
+                  >
+                    About me
+                  </Link>
+                  <Link
+                    className="textlink"
+                    style={{
+                      borderBottom: "1px solid gray",
+                      marginRight: "2rem",
+                    }}
+                    to="/contact"
+                  >
+                    Contact me
                   </Link>
                 </div>
-                <div>
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger style={{ padding: 0, margin: 0 }}>
-                        <Link
-                          target="_blank"
-                          className="textlink"
-                          to="https://rb.gy/028xr0"
-                        >
-                          <IoNewspaperOutline
-                            style={{
-                              width: "1.5rem",
-                              transform: "translateY(30%)",
-                              marginLeft: "1rem",
-                              //   fill: "gray",
-                              color: "gray",
-                            }}
-                          />
-                        </Link>
-                      </TooltipTrigger>
-                      <TooltipContent
-                        style={{
-                          transform: "translateY(200%)",
-                          borderRadius: 0,
-                          padding: 0,
-                        }}
-                      >
-                        <p style={{ fontSize: "0.8rem", color: "black" }}>
-                          Resume
-                        </p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
-                </div>
-                <div>
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger style={{ padding: 0, margin: 0 }}>
-                        <Link
-                          target="_blank"
-                          className="textlink"
-                          to="https://www.linkedin.com/in/ashutosh-rai-b75aa622a/"
-                        >
-                          <CiLinkedin
-                            style={{
-                              width: "1.5rem",
-                              transform: "translateY(30%)",
-                              marginLeft: "1rem",
-                            }}
-                          />
-                        </Link>
-                      </TooltipTrigger>
-                    </Tooltip>
-                  </TooltipProvider>
-                </div>
-                <div>
-                  <TooltipProvider>
-                    <Tooltip>
-                      <TooltipTrigger style={{ padding: 0, margin: 0 }}>
-                        <Link
-                          target="_blank"
-                          className="textlink"
-                          to="https://github.com/Ashutosh0602"
-                        >
-                          <FaGithub
-                            style={{
-                              width: "1.5rem",
-                              transform: "translateY(30%)",
-                              marginLeft: "1rem",
-                            }}
-                          />
-                        </Link>
-                      </TooltipTrigger>
-                    </Tooltip>
-                  </TooltipProvider>
-                </div>
-              </div>
-              <div
-                className=""
-                style={{
-                  fontSize: "1rem",
-                  fontWeight: 300,
-                  transform: "translateY(12%)",
-                  // width:
-                }}
-              >
-                <Link
-                  style={{
-                    borderBottom: "1px solid gray",
-                    marginRight: "2rem",
-                  }}
-                  className="textlink"
-                  to="/about"
-                >
-                  About me
-                </Link>
-                <Link
-                  className="textlink"
-                  style={{
-                    borderBottom: "1px solid gray",
-                    marginRight: "2rem",
-                  }}
-                  to="/contact"
-                >
-                  Contact me
-                </Link>
               </div>
             </div>
-          </div>
-          <div className="absolute" style={{ top: "-10rem", right: "-10rem" }}>
-            <img src={homeSVG} style={{ width: "40rem" }} />
-          </div>
+            <div
+              className="absolute"
+              style={{ top: "-10rem", right: "-10rem" }}
+            >
+              <img src={homeSVG} style={{ width: "40rem" }} />
+            </div>
+          </ContainerWrap>
         </div>
         <div
           onMouseLeave={() => mouseLeave(homeREF)}
@@ -233,11 +239,14 @@ function Home() {
           onMouseMove={(ev) => mouseMove(homeREF, ev)}
           className={
             classes.home_robot +
-            " transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
+            " relative transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
           }
         >
-          <Robot />
+          <ContainerWrap>
+            <Robot />
+          </ContainerWrap>
         </div>
+
         <div
           onMouseLeave={() => mouseLeave(homeREF)}
           onMouseEnter={(ev) => mouseEnter(homeREF, ev)}
@@ -245,10 +254,13 @@ function Home() {
           ref={blogREF}
           className={
             classes.home_blog +
-            " transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
+            " relative transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
           }
         >
-          <BlogHome data={[blogWidth, blogheight]} />
+          {" "}
+          <ContainerWrap>
+            <BlogHome data={[blogWidth, blogheight]} />{" "}
+          </ContainerWrap>
         </div>
         <div
           onMouseLeave={() => mouseLeave(homeREF)}
@@ -259,7 +271,10 @@ function Home() {
             " transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
           }
         >
-          <ProjectsHome />
+          {" "}
+          <ContainerWrap>
+            <ProjectsHome />{" "}
+          </ContainerWrap>
         </div>
         <div
           onMouseLeave={() => mouseLeave(homeREF)}
@@ -270,7 +285,10 @@ function Home() {
             " relative transition-transform ease-out hover:[transform:rotateX(var(--x-rotation))_rotateY(var(--y-rotation))]"
           }
         >
-          <ExperienceHome />
+          {" "}
+          <ContainerWrap>
+            <ExperienceHome />{" "}
+          </ContainerWrap>
         </div>
       </section>
     </Transition>

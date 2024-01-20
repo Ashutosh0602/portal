@@ -14,16 +14,17 @@
   background-color: #1b1b1b;
   grid-row: 1/13;
   grid-column: 1/12;
-  padding-left: calc(100% * 0.05);
-  padding-right: calc(100% * 0.05);
-  padding-top: calc(100% * 0.02);
-  padding-bottom: calc(100% * 0.02);
+  /* padding-right: calc(100% * 0.05); */
+  /* padding-top: calc(100% * 0.02); */
+  /* padding-bottom: calc(100% * 0.02); */
   font-family: "Roboto", sans-serif;
   overflow: hidden;
   border-radius: 1rem;
 }
 .home_main div:nth-child(1) {
+  padding-left: calc(100% * 0.01);
   color: #b1b1b1;
+  padding-top: calc(100% * 0.01);
 }
 
 .home_main div:nth-child(2) {

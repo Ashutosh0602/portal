@@ -12,9 +12,9 @@
   grid-template-rows: repeat(20, 1fr);
   grid-template-columns: repeat(7, 1fr);
 }
-.imgGridTemp div {
-  /* grid-auto-flow; */
-}
+/* .imgGridTemp div { */
+/* grid-auto-flow; */
+/* } */
 .projectCard:hover .project_cover {
   display: none;
 }

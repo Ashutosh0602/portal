@@ -17,8 +17,26 @@
   font-weight: 800;
   font-family: "Roboto";
 }
+.blog_subheading {
+  transform: translateY(40%);
+}
 .blog_subheading > div:nth-child(1) {
   color: whitesmoke;
   font-family: "Poppins";
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  text-align: center;
+}
+.blog_subheading > div:nth-child(2) {
+  color: whitesmoke;
+  font-family: "Poppins";
+  font-size: 0.8rem;
+  text-align: center;
+  width: 80%;
+  letter-spacing: 0;
+  margin: 0 auto;
+}
+.blog_card:hover .blog_cover {
+  display: none;
 }

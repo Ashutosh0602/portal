@@ -1,0 +1,33 @@
+export const projectsList=[
+    {
+        title:"",
+        description:'',
+        github:"",
+        live:"",
+        techUsed:[
+            {
+                tech:"",
+                techDescription:""
+            },
+            {
+                tech:"",
+                techDescription:""
+            },
+            {
+                tech:"",
+                techDescription:""
+            },
+            {
+                tech:"",
+                techDescription:""
+            },
+        ],
+        img:[
+            {img:""},
+            {img:""},
+            {img:""},
+            {img:""},
+        ]
+
+    },
+]

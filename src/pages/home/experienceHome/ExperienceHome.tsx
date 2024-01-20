@@ -1,12 +1,12 @@
 import blueGreen from "../../../assets/bluegreen.svg";
-import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { experienceHomeData } from "./ExperienceHomeData";
 import classes from "./ExperienceHome.module.css";
-import { DOMElement, useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 function ExperienceHome() {
@@ -44,12 +44,12 @@ function ExperienceHome() {
             centeredSlides={true}
             ref={sliderref}
             autoplay={{
-              delay: 300, // Delay between transitions
+              delay: 3, // Delay between transitions
               disableOnInteraction: true,
             }}
             freeMode={{
               enabled: true,
-              minimumVelocity: 0.2,
+              minimumVelocity: 20,
             }}
             modules={[FreeMode, Autoplay]}
             className="mySwiper"

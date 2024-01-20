@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const ArrowSmall = ({ width = "14", height = "14" }) => {
   return (
-    <div style={{ mixBlendMode: "difference" }}>
+    <div style={{ mixBlendMode: "exclusion" }}>
       <motion.svg
         width={width}
         height={height}

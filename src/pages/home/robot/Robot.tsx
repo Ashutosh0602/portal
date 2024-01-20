@@ -1,4 +1,4 @@
-import roboto from "../../assets/robot.svg";
+// import roboto from "../../assets/robot.svg";
 import { motion, useDragControls } from "framer-motion";
 import classes from "../Home.module.css";
 import { useRef } from "react";
@@ -13,14 +13,15 @@ function Robot() {
   }
 
   return (
-    <div style={{ position: "relative" }}>
+    <>
+      {/* <div style={{ position: "relative", height: "100%" }}> */}
       {/* <img style={{ margin: "0 auto" }} src={roboto} /> */}
       <svg
         width="305"
         height="326"
         viewBox="0 0 305 326"
         fill="none"
-        style={{ margin: "0 auto" }}
+        style={{ margin: "0 auto", height: "100%" }}
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -157,12 +158,11 @@ function Robot() {
           stroke-linejoin="round"
         />
       </svg>
-
       <div
         style={{
           position: "absolute",
           width: "100%",
-          height: "110%",
+          height: "100%",
           backgroundColor: "rgba(27,27,27,0.5)",
           top: 0,
           left: 0,
@@ -170,7 +170,8 @@ function Robot() {
         }}
         className={classes.robot_cover}
       ></div>
-    </div>
+      {/* </div> */}
+    </>
   );
 }
 
