@@ -7,7 +7,6 @@ const Transition = ({
 //   colorIn = "black",
 //   colorOut = "black",
 any) => {
-  console.log(children);
   return (
     <div style={{ backgroundColor: "transparent" }}>
       {children}
