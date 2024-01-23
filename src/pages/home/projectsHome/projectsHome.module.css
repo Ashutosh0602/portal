@@ -8,13 +8,20 @@
   /* -webkit-text-fill-color: transparent; */
 }
 .imgGridTemp {
-  display: grid;
+  /* display: grid;
   grid-template-rows: repeat(20, 1fr);
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr); */
 }
 /* .imgGridTemp div { */
 /* grid-auto-flow; */
 /* } */
 .projectCard:hover .project_cover {
   display: none;
+  /* background-color: #1b1b1b72; */
+}
+
+@media (max-width: 768px) {
+  .projectCard {
+    height: 25rem !important;
+  }
 }

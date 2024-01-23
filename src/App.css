@@ -5,6 +5,10 @@ body {
   font-size: 16px;
   background-color: #111111;
 }
+::selection {
+  background-color: #a46d02;
+  color: white;
+}
 .slide-in {
   position: fixed;
   top: 0;

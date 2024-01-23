@@ -76,11 +76,36 @@
   display: none;
 }
 
-/* @media all and (max-width: 800px) {
+@media (max-width: 768px) {
+  .homeSection {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: auto;
+  }
+  .home_main {
+    height: 20rem;
+  }
+  .home_main div:nth-child(1) {
+    font-size: 1rem;
+  }
   .home_main div:nth-child(2) {
     color: #ffffff;
-    font-size: 2rem;
-    line-height: 3.5rem;
-    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 900;
   }
-} */
+  .home_main div:nth-child(3) {
+    font-size: 0.8rem;
+  }
+  .md_homeTag {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .home_blog {
+  }
+  .home_projects {
+  }
+  .home_robot {
+  }
+}

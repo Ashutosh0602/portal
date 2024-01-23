@@ -3,6 +3,7 @@ import spot1 from '../../assets/projectsImg/spot1.jpeg'
 import spot2 from '../../assets/projectsImg/spot2.jpeg'
 import spot3 from '../../assets/projectsImg/spot3.jpeg'
 import spot4 from '../../assets/projectsImg/spot4.jpeg'
+import spotCover from '../../assets/projectsImg/spotCover.png'
 
 
 // EduConnect project
@@ -10,6 +11,13 @@ import ed1 from '../../assets/projectsImg/ed1.png'
 import ed2 from '../../assets/projectsImg/ed2.png'
 import ed3 from '../../assets/projectsImg/ed3.png'
 import ed4 from '../../assets/projectsImg/ed4.png'
+import eduCover from '../../assets/projectsImg/eduCover.png'
+
+// Travello project
+import travelloCover from '../../assets/projectsImg/TraveloCover.png'
+import trv1 from '../../assets/projectsImg/trv1.png'
+import trv2 from '../../assets/projectsImg/trv2.png'
+import trv3 from '../../assets/projectsImg/trv3.png'
 
 // Amped project
 import amp1 from '../../assets/projectsImg/amp1.png'
@@ -19,6 +27,7 @@ import amp4 from '../../assets/projectsImg/amp4.png'
 import amp5 from '../../assets/projectsImg/amp5.png'
 import amp6 from '../../assets/projectsImg/amp6.png'
 import amp7 from '../../assets/projectsImg/amp7.png'
+import ampCover from '../../assets/projectsImg/ampCover.png'
 
 // FlickHub project
 import fh1 from '../../assets/projectsImg/fh1.jpeg'
@@ -26,6 +35,31 @@ import fh2 from '../../assets/projectsImg/fh2.jpeg'
 import fh3 from '../../assets/projectsImg/fh3.jpeg'
 import fh4 from '../../assets/projectsImg/fh4.jpeg'
 import fh5 from '../../assets/projectsImg/fh5.jpeg'
+import flickCover from '../../assets/projectsImg/flickCover.png'
+
+// Enftora project
+import enfCover from '../../assets/projectsImg/enfCover.png'
+import enf1 from '../../assets/projectsImg/enf1.png'
+import enf3 from '../../assets/projectsImg/enf3.png'
+import enf5 from '../../assets/projectsImg/enf5.png'
+import enf6 from '../../assets/projectsImg/enf6.png'
+import enf7 from '../../assets/projectsImg/enf7.png'
+
+// Online Typing project
+import typeCover from '../../assets/projectsImg/type.png'
+
+// tech stack
+import reactN from '../../assets/projectsImg/reactN.png'
+import typescript from '../../assets/projectsImg/typescript.png'
+import node from '../../assets/projectsImg/node.png'
+import nest from '../../assets/projectsImg/NestJS.png'
+import mongo from '../../assets/projectsImg/Mongo.png'
+import firebase from '../../assets/projectsImg/firebase.png'
+import redis from '../../assets/projectsImg/Redis.png'
+import webRTC from '../../assets/projectsImg/webRTC.png'
+import socket from '../../assets/projectsImg/socket.png'
+import gateway from '../../assets/projectsImg/razorpay.png'
+import api from '../../assets/projectsImg/Api.png'
 
 export const projectsList=[
     {
@@ -37,27 +71,33 @@ export const projectsList=[
         techUsed:[
             {
                 tech:"React Native",
-                techDescription:"React Native lets you build native apps for iOS and Android using familiar JavaScript and React, saving time and code while delivering platform-specific performance."
+                techDescription:"React Native lets you build native apps for iOS and Android using familiar JavaScript and React, saving time and code while delivering platform-specific performance.",
+                techImg:reactN
             },
             {
                 tech:"Typescript",
-                techDescription:"TypeScript boosts JavaScript with optional static typing, bringing a power-up of improved code structure, error prevention, and developer confidence, while still playing seamlessly with plain JS."
+                techDescription:"TypeScript boosts JavaScript with optional static typing, bringing a power-up of improved code structure, error prevention, and developer confidence, while still playing seamlessly with plain JS.",
+                techImg:typescript
             },
             {
                 tech:"NestJS",
-                techDescription:"NestJS takes progressive JavaScript principles and builds a powerful Node.js framework for server-side applications, emphasizing scalability, maintainability, and developer experience."
+                techDescription:"NestJS takes progressive JavaScript principles and builds a powerful Node.js framework for server-side applications, emphasizing scalability, maintainability, and developer experience.",
+                techImg:nest
             },
             {
                 tech:"Redis",
-                techDescription:"Redis fires up your applications with lightning-fast in-memory data storage, acting as a cache, database, or messaging broker, all rolled into one."
+                techDescription:"Redis fires up your applications with lightning-fast in-memory data storage, acting as a cache, database, or messaging broker, all rolled into one.",
+                techImg:redis
             },
             {
                 tech:"MongoDB",
-                techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation."
+                techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation.",
+                techImg:mongo
             },
             {
                 tech:"Firebase RTDS",
-                techDescription:"Firebase Realtime Database connects your app to a cloud-hosted, synced database, letting you share data in real-time across users and platforms. It's flexible and secure, keeping your app responsive and data protected."
+                techDescription:"Firebase Realtime Database connects your app to a cloud-hosted, synced database, letting you share data in real-time across users and platforms. It's flexible and secure, keeping your app responsive and data protected.",
+                techImg:firebase
             },
         ],
         img:[
@@ -66,6 +106,7 @@ export const projectsList=[
             {img:spot3},
             {img:spot4},
         ],
+        cover:spotCover,
         app:"Mobile app",
         techStack:"Full Stack"
 
@@ -79,27 +120,33 @@ export const projectsList=[
         techUsed:[
             {
                 tech:"ReactJS",
-                techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development."
+                techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
+                techImg:reactN
             },
             {
                 tech:"NodeJS",
-                techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end."
+                techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end.",
+                techImg:node
             },
             {
                 tech:"MongoDB",
-                techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation."
+                techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation.",
+                techImg:mongo
             },
             {
                 tech:"WebRTC",
-                techDescription:"WebRTC superpowers your web apps with real-time communication magic. No plugins needed, just build in video, voice, and data channels directly into your web pages for seamless, interactive experiences."
+                techDescription:"WebRTC superpowers your web apps with real-time communication magic. No plugins needed, just build in video, voice, and data channels directly into your web pages for seamless, interactive experiences.",
+                techImg:webRTC
             },
             {
                 tech:"Socket.io",
-                techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience."
+                techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience.",
+                techImg:socket
             },
             {
                 tech:"Razorpay Gateway",
-                techDescription:"Payment gateways bridge the gap between your online business and customers' wallets, handling secure transactions with cards, e-wallets, and other methods, simplifying online payments and boosting sales."
+                techDescription:"Payment gateways bridge the gap between your online business and customers' wallets, handling secure transactions with cards, e-wallets, and other methods, simplifying online payments and boosting sales.",
+                techImg:gateway
             },
         ],
         img:[
@@ -108,40 +155,50 @@ export const projectsList=[
             {img:ed3},
             {img:ed4},
         ],
+        cover:eduCover,
         app:"Web app",
         techStack:"Full Stack"
 
     },
     {
         title:"Travello",
-        description:"EduConnect addresses challenges in education by streamlining the teacher selection process, facilitating efficient communication between teachers, students, and parents, ensuring proper learning environments, enhancing assignment management, and enabling transparent progress monitoring for parents.",
-        detail:"EduConnect revolutionizes the process of selecting the best teacher by implementing a comprehensive set of criteria. Teachers are evaluated based on their ratings, qualifications, experience, and expertise, ensuring that only qualified and skilled educators are part of the platform. Monthly anonymous feedback from students provides valuable insights into the teaching quality, and response times in various aspects such as chat, assignment, and tests help gauge the teacher's efficiency.\nThe platform enhances the learning experience by providing a dedicated container for seamless video streaming, fostering better teacher-student connections. Specific sections for chat and doubt-solving, as well as a detailed course curriculum/structure, contribute to a well-organized and effective learning environment. Moreover, EduConnect offers a dedicated space for assignments, tests, and practice work, allowing students to stay organized and focused on their academic tasks.\nTo strengthen the connection between parents and their child's education, EduConnect ensures a secure link between student IDs and parents' accounts using a unique and confidential key. This feature enables parents to actively track their child's academic progress, access assignment details, and stay informed about the results, fostering a collaborative and transparent educational experience.",
+        description:"Travello: A comprehensive travel companion app addressing challenges by facilitating easy connections with fellow tourists, providing local insights, highlighting popular spots, and offering a one-stop solution for transportation and ticket bookings.",
+        detail:"Travelo revolutionizes travel experiences with a location-based community, allowing users to connect with fellow tourists or groups before and during their visit. The app's Explore tab features a dynamic location-based feed section, providing real-time updates on local attractions, events, and activities, ensuring travelers stay informed and engaged throughout their journey.\n\nDiscovering the best places to visit is made effortless with Travelo's curated recommendations, leveraging the number of visitors and ratings associated with each destination. The app empowers users to explore top-rated spots based on the authentic experiences shared by fellow travelers. Additionally, Travelo goes beyond conventional travel guides by incorporating a local business/service section, showcasing restaurants, guides, and personalized packages offered by locals. Finally, Travelo consolidates all booking services in one convenient platform, simplifying the process of securing transportation, accommodations, and tickets, providing users with a comprehensive travel companion for seamless and enriched journeys.",
         github:"https://github.com/Ashutosh0602/travelo",
         live:"",
         techUsed:[
             {
                 tech:"ReactJS",
-                techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development."
+                techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
+                techImg:reactN
             },
             {
                 tech:"NodeJS",
-                techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end."
+                techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end.",
+                techImg:node
             },
             {
                 tech:"MongoDB",
-                techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation."
+                techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation.",
+                techImg:mongo
             },
             {
                 tech:"Socket.io",
-                techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience."
+                techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience.",
+                techImg:socket
+            },
+            {
+                tech:"Razorpay Gateway",
+                techDescription:"Payment gateways bridge the gap between your online business and customers' wallets, handling secure transactions with cards, e-wallets, and other methods, simplifying online payments and boosting sales.",
+                techImg:gateway
             },
         ],
         img:[
-            {img:ed1},
-            {img:ed2},
-            {img:ed3},
-            {img:ed4},
+            {img:trv1},
+            {img:trv2},
+            {img:trv3},
         ],
+        cover:travelloCover,
         app:"Web app",
         techStack:"Full Stack"
 
@@ -155,15 +212,18 @@ export const projectsList=[
         techUsed:[
             {
                 tech:"ReactJS",
-                techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development."
+                techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
+                techImg:reactN
             },
             {
                 tech:"Razorpay Gateway",
-                techDescription:"Payment gateways bridge the gap between your online business and customers' wallets, handling secure transactions with cards, e-wallets, and other methods, simplifying online payments and boosting sales."
+                techDescription:"Payment gateways bridge the gap between your online business and customers' wallets, handling secure transactions with cards, e-wallets, and other methods, simplifying online payments and boosting sales.",
+                techImg:gateway
             },
             {
                 tech:"Firebase",
-                techDescription:"Firebase fuels your apps with powerful backend services like databases, auth, and storage, hosted on Google's cloud, scaling effortlessly with your needs."
+                techDescription:"Firebase fuels your apps with powerful backend services like databases, auth, and storage, hosted on Google's cloud, scaling effortlessly with your needs.",
+                techImg:firebase
             },
 
         ],
@@ -176,6 +236,7 @@ export const projectsList=[
             {img:amp6},
             {img:amp7},
         ],
+        cover:ampCover,
         app:"Web app",
         techStack:"Frontend"
     },
@@ -188,15 +249,18 @@ export const projectsList=[
         techUsed:[
             {
                 tech:"React Native",
-                techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development."
+                techDescription:"React Native lets you build native apps for iOS and Android using familiar JavaScript and React, saving time and code while delivering platform-specific performance.",
+                techImg:reactN
             },
             {
                 tech:"Typescript",
-                techDescription:"TypeScript boosts JavaScript with optional static typing, bringing a power-up of improved code structure, error prevention, and developer confidence, while still playing seamlessly with plain JS."
+                techDescription:"TypeScript boosts JavaScript with optional static typing, bringing a power-up of improved code structure, error prevention, and developer confidence, while still playing seamlessly with plain JS.",
+                techImg:typescript
             },
             {
                 tech:"Firebase",
-                techDescription:"Firebase fuels your apps with powerful backend services like databases, auth, and storage, hosted on Google's cloud, scaling effortlessly with your needs."
+                techDescription:"Firebase fuels your apps with powerful backend services like databases, auth, and storage, hosted on Google's cloud, scaling effortlessly with your needs.",
+                techImg:firebase
             },
         ],
         img:[
@@ -206,7 +270,72 @@ export const projectsList=[
             {img:fh4},
             {img:fh5},
         ],
+        cover:flickCover,
         app:"Mobile app",
         techStack:"Frontend"
+    },
+    {
+        title:"Enftora",
+        description:"Enftora: A front-end project leveraging APIs to create a dynamic and user-friendly NFT marketplace for seamless exploration, trading, and interaction with digital assets.",
+        detail:"Enftora, an innovative front-end project, introduces a visually stunning NFT marketplace that seamlessly integrates with APIs to elevate the user experience. The platform serves as a gateway to the world of non-fungible tokens, providing a sleek and intuitive interface for users to explore, buy, and sell unique digital assets. Enftora's front-end design ensures a captivating visual journey, enhancing the appeal of the NFT marketplace and making it accessible to both seasoned collectors and newcomers alike.\nDriven by API integration, Enftora not only showcases an extensive array of NFTs but also ensures real-time updates on market trends, pricing, and availability. The front-end facilitates smooth navigation through various categories, artists, and collections, enabling users to effortlessly discover and engage with the diverse world of digital art and collectibles. With Enftora, the front-end becomes a gateway to an immersive NFT experience, where art enthusiasts and creators converge in a visually appealing and functionally rich marketplace. ",
+        github:"https://github.com/Ashutosh0602/Enftora",
+        live:"",
+        techUsed:[
+            {
+                tech:"React Js",
+                techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
+                techImg:reactN
+            },
+            {
+                tech:'API',
+                techDescription:'API, or Application Programming Interface, is a set of rules and protocols that enables different software applications to communicate and interact with each other. Serving as a bridge between various systems, APIs allow developers to access specific features or data from a service, facilitating seamless integration and functionality in software development.',
+                techImg:api
+            },
+            {
+                tech:"Firebase",
+                techDescription:"Firebase fuels your apps with powerful backend services like databases, auth, and storage, hosted on Google's cloud, scaling effortlessly with your needs.",
+                techImg:firebase
+            },
+        ],
+        img:[
+            {img:enf1},
+            {img:enf3},
+            {img:enf5},
+            {img:enf6},
+            {img:enf7},
+        ],
+        cover:enfCover,
+        app:"Web app",
+        techStack:"Frontend"
+    },
+    {
+        title:"Online Typing Test",
+        description:"Online Typing Test: A dynamic platform akin to MonkeyType, offering users an engaging and efficient way to enhance their typing skills through interactive exercises and real-time performance tracking.",
+        detail:"Online Typing Test, inspired by platforms like MonkeyType, offers an engaging and interactive way for users to enhance their typing skills. With a user-friendly interface, the project provides a simple yet effective environment for individuals to assess and improve their typing speed and accuracy. The platform presents a variety of customizable tests, allowing users to select different difficulty levels and typing durations to cater to their specific skill levels and preferences.\nOnline Typing Test stands out with its real-time feedback and performance analytics, offering users detailed insights into their typing proficiency. The project not only serves as a valuable tool for individuals looking to enhance their keyboard skills but also provides a fun and challenging environment for users to track their progress over time. Whether for personal development or professional growth, Online Typing Test makes the journey to mastering typing skills accessible and enjoyable for users of all levels.",
+        github:"https://github.com/Ashutosh0602/Online-typing-test",
+        live:"",
+        techUsed:[
+            {
+                tech:"NodeJS",
+                techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end.",
+                techImg:node
+            },
+            {
+                tech:'API',
+                techDescription:'API, or Application Programming Interface, is a set of rules and protocols that enables different software applications to communicate and interact with each other. Serving as a bridge between various systems, APIs allow developers to access specific features or data from a service, facilitating seamless integration and functionality in software development.',
+                techImg:api
+            },
+            {
+                tech:"Socket.io",
+                techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience.",
+                techImg:socket
+            },
+        ],
+        img:[
+            // {img:''},
+        ],
+        cover:typeCover,
+        app:"Web app",
+        techStack:"Full Stack"
     },
 ]

@@ -40,3 +40,19 @@
 .blog_card:hover .blog_cover {
   display: none;
 }
+
+@media (max-width: 768px) {
+  .blog_card {
+    padding: "0rem 0.5rem 0 0.5rem";
+    /* height: "30rem" !important; */
+  }
+  .blog_subheading {
+    transform: translateY(0%) !important;
+  }
+  .blog_subheading > div:nth-child(1) {
+    font-size: 1.4rem;
+  }
+  .swiperBlog {
+    height: "30rem" !important;
+  }
+}

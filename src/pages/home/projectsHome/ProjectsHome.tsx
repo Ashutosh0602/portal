@@ -1,68 +1,105 @@
 import { Link } from "react-router-dom";
 import classes from "./projectsHome.module.css";
 import { projectHomeData } from "./projectsHomeData";
+import { useRef, useState } from "react";
 
 function ProjectsHome() {
+  const projectREF = useRef<any>();
+  const [X, setX] = useState(15);
+  const [Y, setY] = useState(100);
+
+  const mid = projectHomeData.length / 2;
   const ImgGrid = () =>
-    projectHomeData.map((ls) => {
-      return (
-        <div style={{ width: "5rem", margin: "0.2rem" }}>
-          <img src={ls.img} loading="eager" width="auto" height="auto" />
-        </div>
-      );
+    projectHomeData.map((ls, index) => {
+      if (index < mid) {
+        return (
+          <div style={{ width: "5rem", margin: "0.5rem" }}>
+            <img src={ls.img} loading="eager" width="auto" height="auto" />
+          </div>
+        );
+      }
+    });
+
+  const AnoImgGrid = () =>
+    projectHomeData.map((ls, index) => {
+      if (index > mid) {
+        return (
+          <div style={{ width: "5rem", margin: "0.5rem" }}>
+            <img src={ls.img} loading="eager" width="auto" height="auto" />
+          </div>
+        );
+      }
     });
 
   return (
-    <div
-      className={classes.projectCard}
-      style={{ position: "relative", zIndex: 1, width: "100%", height: "auto" }}
-    >
+    <Link className="textlink" to="/project">
       <div
-        className="absolute"
+        ref={projectREF}
+        className={classes.projectCard}
         style={{
-          backgroundColor: "rgba(27,27,27,0.2)",
-          zIndex: 2,
+          position: "relative",
+          zIndex: 1,
           width: "100%",
-          height: "100vh",
+          height: "auto",
         }}
+        onMouseMove={
+          (e) => {
+            setX((e.pageX - projectREF.current.getBoundingClientRect().x) / 10);
+            setY((e.pageY - projectREF.current.getBoundingClientRect().y) / 10);
+          }
+          //   }
+          //   console.log(
+          //     (projectREF.current.getBoundingClientRect().x - e.pageX) / 10,
+          //     (projectREF.current.getBoundingClientRect().y - e.pageY) / 10
+          //     // projectREF.current.getBoundingClientRect()
+          //   )
+        }
+        // onMouseEnter={(e) => console.log(e.target.}
       >
+        <div>
+          <div
+            style={{
+              position: "absolute",
+              left: `-${X}%`,
+              //   bottom: `-${Y}%`,
+              columns: 6,
+              columnGap: 0,
+              columnFill: "balance-all",
+            }}
+          >
+            <ImgGrid />
+            <AnoImgGrid />
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              top: "11rem",
+              //   left: "50%",
+              textAlign: "center",
+              backgroundColor: "#1b1b1b",
+              fontSize: "4rem",
+              fontWeight: 800,
+              color: "#A46D02",
+              width: "100%",
+            }}
+          >
+            PROJECT
+          </div>
+        </div>
         <div
-          className={classes.projectHeading}
-          //   style={{ backgroundColor: "black" }}
-        >
-          PROJECT
-        </div>
-        <div className="absolute" style={{ top: "45%" }}>
-          <Link className="textlink" to="/project">
-            Projects
-          </Link>
-        </div>
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "110vh",
+            backgroundColor: "rgba(27,27,27,0.7)",
+            top: 0,
+            left: 0,
+            zIndex: 6,
+          }}
+          className={classes.project_cover}
+        ></div>
       </div>
-      <div
-        className={classes.imgGridTemp + " absolute"}
-        style={{
-          //   bottom: "10%",
-          left: "-50%",
-          //   transform: "translate(-50% -50%)",
-          zIndex: 0,
-        }}
-      >
-        <ImgGrid />
-      </div>
-      <div
-        style={{
-          position: "absolute",
-          width: "100%",
-          height: "110vh",
-          //   backgroundColor: "black",
-          backgroundColor: "rgba(27,27,27,0.7)",
-          top: 0,
-          left: 0,
-          zIndex: 6,
-        }}
-        className={classes.project_cover}
-      ></div>
-    </div>
+    </Link>
   );
 }
 

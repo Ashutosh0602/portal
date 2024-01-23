@@ -1,0 +1,17 @@
+.tech_card:hover {
+  background-color: #1b1b1b !important;
+}
+.swiper-button-prev {
+  width: "2rem" !important;
+}
+.swiper-button-prev > img:hover {
+  transform: scale(1.2);
+}
+swiper-button-next img:hover {
+}
+
+@media (max-width: 768px) {
+  .swiper_projectDetails {
+    height: 20rem !important;
+  }
+}

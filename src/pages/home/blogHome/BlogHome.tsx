@@ -20,10 +20,17 @@ function BlogHome(props: any) {
     swiperRef.current.swiper.autoplay.stop();
   }, []);
   return (
-    <Link className="textlink" to="/blog">
+    <Link
+      className="textlink"
+      to="/blog"
+      onMouseOutCapture={() => swiperRef.current.swiper.slideReset(1000)}
+    >
       <div
         onMouseOverCapture={() => swiperRef.current.swiper.autoplay.start()}
-        onMouseOut={() => swiperRef.current.swiper.autoplay.stop()}
+        onMouseOut={() => {
+          swiperRef.current.swiper.autoplay.stop();
+          //   swiperRef.current.swiper.slideTo(0, 1000);
+        }}
         className={classes.blog_card + " relative"}
         style={{ zIndex: 1 }}
       >
@@ -43,9 +50,12 @@ function BlogHome(props: any) {
           }}
           modules={[FreeMode, Autoplay]}
           style={{ width: props?.data[0], height: props?.data[1] }}
-          className="mySwiper"
+          //   className={classes.swiperBlog}
         >
-          <SwiperSlide className="relative" style={{ height: "100%" }}>
+          <SwiperSlide
+            className={classes.swiperBlog + " relative"}
+            style={{ height: "100%" }}
+          >
             <div>
               <div className={classes.blog_heading}>BLOG</div>
               <div className={classes.blog_subheading}>

@@ -89,7 +89,7 @@ function Home() {
                   as a tool
                 </div>
               </div>
-              <div className="flex justify-between">
+              <div className={classes.md_homeTag + " flex justify-between"}>
                 <div className="flex justify-center items-center">
                   <div>
                     <Link className="textlink" to="/">
@@ -246,7 +246,6 @@ function Home() {
             <Robot />
           </ContainerWrap>
         </div>
-
         <div
           onMouseLeave={() => mouseLeave(homeREF)}
           onMouseEnter={(ev) => mouseEnter(homeREF, ev)}
