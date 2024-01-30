@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import classes from "./Contact.module.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Transition from "../cursor/Transition";
