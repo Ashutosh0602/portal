@@ -113,4 +113,10 @@ export const aboutLink=[
         textLink:"https://www.codechef.com/...",
         techImg:"https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg",
     },
+    {
+        Account:"Instagram",
+        accountLink:"https://www.instagram.com/ashu_rai_06?igsh=MWJzNjRqZjB0NDFqcw==",
+        textLink:"https://www.instagram.com/...",
+        techImg:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png",
+    },
 ]

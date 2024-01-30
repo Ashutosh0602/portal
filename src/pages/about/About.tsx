@@ -143,50 +143,52 @@ function About() {
           whileInView="visible"
           variants={staggerVariants}
           viewport={{ once: true }}
-          transition={{ staggerChildren: 0.3, delayChildren: 0.3 }}
-          className="flex flex-wrap gap-5 justify-around mt-16"
+          transition={{ staggerChildren: 0.3, delayChildren: 0.1 }}
+          className="flex flex-wrap gap-5 justify-evenly mt-16"
         >
           {aboutLink.map((ls) => {
             return (
               <motion.div variants={staggerVariants}>
-                <Card>
-                  <CardHeader
-                    style={{
-                      paddingTop: "0.5rem",
-                      paddingLeft: "0.5rem",
-                      paddingRight: "0.5rem",
-                    }}
-                  >
-                    <img
-                      className="lg:w-8"
-                      src={ls.techImg}
-                      style={{ width: "17rem" }}
-                    />
-                  </CardHeader>
-                  <CardFooter style={{}}>
-                    <Link
-                      target="_blank"
-                      className="textlink"
-                      to={ls.accountLink}
+                <ContainerWrap>
+                  <Card>
+                    <CardHeader
+                      style={{
+                        paddingTop: "0.5rem",
+                        paddingLeft: "0.5rem",
+                        paddingRight: "0.5rem",
+                      }}
                     >
-                      <div
-                        style={{
-                          letterSpacing: 0,
-                          fontSize: "1.5rem",
-                          fontWeight: 700,
-                        }}
+                      <img
+                        className="lg:w-8"
+                        src={ls.techImg}
+                        style={{ width: "12rem", margin: "0 auto" }}
+                      />
+                    </CardHeader>
+                    <CardFooter style={{}}>
+                      <Link
+                        target="_blank"
+                        className="textlink"
+                        to={ls.accountLink}
                       >
-                        {ls.Account}
-                      </div>
-                      <p
-                        className="line-clamp-1"
-                        style={{ fontSize: "0.8rem", letterSpacing: 0 }}
-                      >
-                        {ls.textLink}
-                      </p>
-                    </Link>
-                  </CardFooter>
-                </Card>
+                        <div
+                          style={{
+                            letterSpacing: 0,
+                            fontSize: "1.5rem",
+                            fontWeight: 700,
+                          }}
+                        >
+                          {ls.Account}
+                        </div>
+                        <p
+                          className="line-clamp-1"
+                          style={{ fontSize: "0.8rem", letterSpacing: 0 }}
+                        >
+                          {ls.textLink}
+                        </p>
+                      </Link>
+                    </CardFooter>
+                  </Card>
+                </ContainerWrap>
               </motion.div>
             );
           })}

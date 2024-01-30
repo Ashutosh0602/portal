@@ -82,10 +82,10 @@ function Home() {
             >
               <div>
                 <div>I’m a</div>
-                <div>disciplined-DEVELOPER</div>
+                <div>innovating-DEVELOPER</div>
                 <div>
-                  Writing Code to solve a solution — using coding language just
-                  as a tool
+                  Elevating Code to Craft: Writing Code to solve a solution —
+                  using coding language just as a tool
                 </div>
               </div>
               <div className={classes.md_homeTag + " flex justify-between"}>
