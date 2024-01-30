@@ -33,7 +33,6 @@ function Home() {
   useEffect(() => {
     setblogWidth(blogREF.current?.clientWidth);
     setblogheight(blogREF.current?.clientHeight);
-    console.log(blogREF.current?.clientWidth);
   }, []);
 
   function mouseLeave(content: DOMRect | any) {

@@ -6,6 +6,8 @@ import Experience from "./pages/experience/Experience";
 import Project from "./pages/project/Project";
 import { AnimatePresence } from "framer-motion";
 import ProjectDetail from "./pages/projectDetail/ProjectDetail";
+import Contact from "./pages/contact/Contact";
+import About from "./pages/about/About";
 
 function App() {
   const location = useLocation();
@@ -18,6 +20,8 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/project" element={<Project />} />
           <Route path="/projectDetail" element={<ProjectDetail />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
           {/* <Home /> */}
         </Routes>
       </AnimatePresence>

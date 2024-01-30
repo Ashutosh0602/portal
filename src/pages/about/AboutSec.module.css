@@ -1,0 +1,8 @@
+.aboutSection {
+  background-color: #111111;
+  /* height: 100vh; */
+}
+.tech_card:hover {
+  background-color: #1b1b1b !important;
+  transition: none !important;
+}

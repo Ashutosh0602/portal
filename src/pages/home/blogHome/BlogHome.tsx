@@ -14,7 +14,6 @@ import redPurp from "../../../assets/redPurple.svg";
 // };
 
 function BlogHome(props: any) {
-  console.log(props);
   const swiperRef = useRef<any>();
   useEffect(() => {
     swiperRef.current.swiper.autoplay.stop();

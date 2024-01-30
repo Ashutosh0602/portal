@@ -1,0 +1,28 @@
+.contact_section {
+  background-color: #111111;
+  width: 100vw;
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+}
+.contact_scroll_container {
+  height: 230vh;
+  position: relative;
+  /* background-color: red; */
+}
+@media (max-width: 768px) {
+  .contact_mb {
+    font-size: 4rem !important;
+  }
+  .mb_contact_real {
+    font-size: 4rem !important;
+  }
+}
+@media (max-width: 425px) {
+  .contact_mb {
+    font-size: 2rem !important;
+  }
+  .mb_contact_real {
+    font-size: 3rem !important;
+  }
+}

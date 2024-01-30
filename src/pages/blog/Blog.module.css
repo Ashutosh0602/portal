@@ -1,0 +1,15 @@
+.blog_section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #111111;
+}
+@media (max-width: 768px) {
+  .title_blog {
+    font-size: 1rem !important;
+    letter-spacing: 0;
+  }
+  .blog_heading {
+    font-size: 0.7rem !important;
+  }
+}

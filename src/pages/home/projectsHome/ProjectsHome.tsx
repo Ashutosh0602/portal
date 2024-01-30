@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 function ProjectsHome() {
   const projectREF = useRef<any>();
   const [X, setX] = useState(15);
-  const [Y, setY] = useState(100);
+  //   const [Y, setY] = useState(100);
 
   const mid = projectHomeData.length / 2;
   const ImgGrid = () =>
@@ -42,18 +42,10 @@ function ProjectsHome() {
           width: "100%",
           height: "auto",
         }}
-        onMouseMove={
-          (e) => {
-            setX((e.pageX - projectREF.current.getBoundingClientRect().x) / 10);
-            setY((e.pageY - projectREF.current.getBoundingClientRect().y) / 10);
-          }
-          //   }
-          //   console.log(
-          //     (projectREF.current.getBoundingClientRect().x - e.pageX) / 10,
-          //     (projectREF.current.getBoundingClientRect().y - e.pageY) / 10
-          //     // projectREF.current.getBoundingClientRect()
-          //   )
-        }
+        onMouseMove={(e) => {
+          setX((e.pageX - projectREF.current.getBoundingClientRect().x) / 10);
+          // setY((e.pageY - projectREF.current.getBoundingClientRect().y) / 10);
+        }}
         // onMouseEnter={(e) => console.log(e.target.}
       >
         <div>
