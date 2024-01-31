@@ -24,6 +24,9 @@ import BlogHome from "./blogHome/BlogHome";
 import ContainerWrap from "../cursor/ContainerWrap";
 
 function Home() {
+  const [screen, setScreen] = useState<number[]>([]);
+  document.addEventListener("mouseover", (e) => setScreen([e.x, e.y]));
+
   const homeREF = useRef<DOMRect | null>(null);
   const blogREF = useRef<HTMLDivElement | null>(null);
 
@@ -242,7 +245,7 @@ function Home() {
           }
         >
           <ContainerWrap>
-            <Robot />
+            <Robot props={screen} />
           </ContainerWrap>
         </div>
         <div

@@ -3,7 +3,7 @@
   grid-template-columns: repeat(15, 1fr);
   grid-template-rows: repeat(20, 1fr);
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
   background-color: #111111;
   padding: 1rem;

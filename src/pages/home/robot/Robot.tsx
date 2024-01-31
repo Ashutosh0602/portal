@@ -3,19 +3,16 @@ import { motion, useDragControls } from "framer-motion";
 import classes from "../Home.module.css";
 import { useRef } from "react";
 
-function Robot() {
-  const eye = useRef<SVGPathElement | null>(null);
+function Robot(props: any) {
+  const eye = useRef<SVGPathElement | any>();
 
   const controls = useDragControls();
   function startDrag(event: any) {
-    // console.log(event);
     controls.start(event);
   }
 
   return (
     <>
-      {/* <div style={{ position: "relative", height: "100%" }}> */}
-      {/* <img style={{ margin: "0 auto" }} src={roboto} /> */}
       <svg
         width="305"
         height="326"
@@ -116,14 +113,11 @@ function Robot() {
         <motion.path
           onHoverStart={startDrag}
           ref={eye}
-          drag
-          dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
-          dragConstraints={{
-            top: -10,
-            left: -10,
-            right: 10,
-            bottom: 10,
+          style={{
+            x: (props.props[0] - eye.current?.getBoundingClientRect().x) / 80,
+            y: (props.props[1] - eye.current?.getBoundingClientRect().y) / 80,
           }}
+          transition={{ duration: 2, ease: "linear" }}
           d="M212.522 184.319C220.31 184.319 226.623 178.005 226.623 170.217C226.623 162.429 220.31 156.116 212.522 156.116C204.734 156.116 198.42 162.429 198.42 170.217C198.42 178.005 204.734 184.319 212.522 184.319Z"
           fill="#627B8C"
           stroke="#45413C"
@@ -142,14 +136,11 @@ function Robot() {
         <motion.path
           onHoverStart={startDrag}
           ref={eye}
-          drag
-          dragTransition={{ bounceStiffness: 1000, power: 0.8 }}
-          dragConstraints={{
-            top: -10,
-            left: -10,
-            right: 10,
-            bottom: 10,
+          style={{
+            x: (props.props[0] - eye.current?.getBoundingClientRect().x) / 80,
+            y: (props.props[1] - eye.current?.getBoundingClientRect().y) / 80,
           }}
+          transition={{ duration: 2, ease: "linear" }}
           d="M92.6594 184.319C100.447 184.319 106.761 178.005 106.761 170.217C106.761 162.429 100.447 156.116 92.6594 156.116C84.8714 156.116 78.558 162.429 78.558 170.217C78.558 178.005 84.8714 184.319 92.6594 184.319Z"
           fill="#627B8C"
           stroke="#45413C"
