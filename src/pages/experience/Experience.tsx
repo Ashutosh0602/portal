@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import classes from "./Experience.module.css";
-import web from "../../assets/projectsImg/Web.svg";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import ContainerWrap from "../cursor/ContainerWrap";
@@ -122,7 +121,7 @@ function Experience() {
                           >
                             <img
                               style={{ width: "1.5rem", marginRight: "1rem" }}
-                              src={web}
+                              src="https://res.cloudinary.com/dlncfovuv/image/upload/v1706798641/portfolio/browser.svg"
                             />
                             Website
                           </Button>

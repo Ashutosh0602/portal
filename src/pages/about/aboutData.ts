@@ -3,7 +3,7 @@ export const aboutTech=[
     {
         tech:'ReactJS',
         techDesc:'ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.',
-        techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png",
+        techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/react.png",
     },
     {
         tech:'NodeJS',

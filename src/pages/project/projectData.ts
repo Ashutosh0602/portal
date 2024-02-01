@@ -9,7 +9,7 @@ export const projectsList=[
             {
                 tech:"React Native",
                 techDescription:"React Native lets you build native apps for iOS and Android using familiar JavaScript and React, saving time and code while delivering platform-specific performance.",
-                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/react.png'
             },
             {
                 tech:"Typescript",
@@ -58,7 +58,7 @@ export const projectsList=[
             {
                 tech:"ReactJS",
                 techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
-                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/react.png'
             },
             {
                 tech:"NodeJS",
@@ -107,7 +107,7 @@ export const projectsList=[
             {
                 tech:"ReactJS",
                 techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
-                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/react.png'
             },
             {
                 tech:"NodeJS",
@@ -150,7 +150,7 @@ export const projectsList=[
             {
                 tech:"ReactJS",
                 techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
-                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/react.png'
             },
             {
                 tech:"Razorpay Gateway",
@@ -187,7 +187,7 @@ export const projectsList=[
             {
                 tech:"React Native",
                 techDescription:"React Native lets you build native apps for iOS and Android using familiar JavaScript and React, saving time and code while delivering platform-specific performance.",
-                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/react.png'
             },
             {
                 tech:"Typescript",
@@ -221,7 +221,7 @@ export const projectsList=[
             {
                 tech:"React Js",
                 techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
-                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/react.png'
             },
             {
                 tech:'API',

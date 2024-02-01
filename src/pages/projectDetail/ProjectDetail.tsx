@@ -13,8 +13,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import github from "../../assets/projectsImg/Github.svg";
-import web from "../../assets/projectsImg/Web.svg";
 import classes from "./ProjectDetail.module.css";
 import { motion, useInView } from "framer-motion";
 import nextEl from "../../assets/projectsImg/nextEl.svg";
@@ -174,7 +172,7 @@ function ProjectDetail() {
               >
                 <img
                   style={{ width: "1.5rem", marginRight: "1rem" }}
-                  src={github}
+                  src="https://res.cloudinary.com/dlncfovuv/image/upload/v1706798641/portfolio/github.svg"
                 />
                 Github
               </Button>
@@ -198,7 +196,7 @@ function ProjectDetail() {
               >
                 <img
                   style={{ width: "1.5rem", marginRight: "1rem" }}
-                  src={web}
+                  src="https://res.cloudinary.com/dlncfovuv/image/upload/v1706798641/portfolio/browser.svg"
                 />
                 Website
               </Button>
