@@ -116,6 +116,7 @@ function Robot(props: any) {
           style={{
             x: (props.props[0] - eye.current?.getBoundingClientRect().x) / 80,
             y: (props.props[1] - eye.current?.getBoundingClientRect().y) / 80,
+            transitionDuration: "100ms",
           }}
           transition={{ duration: 2, ease: "linear" }}
           d="M212.522 184.319C220.31 184.319 226.623 178.005 226.623 170.217C226.623 162.429 220.31 156.116 212.522 156.116C204.734 156.116 198.42 162.429 198.42 170.217C198.42 178.005 204.734 184.319 212.522 184.319Z"
