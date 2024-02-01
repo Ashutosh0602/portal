@@ -11,6 +11,6 @@ export const experience=[
             "Enhanced page loading speed from 600ms to 30ms through the implementation of caching and efficient state management with Redux.",
             "Took advantage of additional technologies such as transactional mailers, AWS ( Ec2, S3, Route53, CloudFront) services and Firebase for seamless development and integration.",
         ],
-        img:tnp,
+        img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798638/portfolio/tnp.png",
     }
 ]

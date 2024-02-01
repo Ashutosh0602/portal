@@ -1,66 +1,3 @@
-// Spot project
-import spot1 from '../../assets/projectsImg/spot1.jpeg'
-import spot2 from '../../assets/projectsImg/spot2.jpeg'
-import spot3 from '../../assets/projectsImg/spot3.jpeg'
-import spot4 from '../../assets/projectsImg/spot4.jpeg'
-import spotCover from '../../assets/projectsImg/spotCover.png'
-
-
-// EduConnect project
-import ed1 from '../../assets/projectsImg/ed1.png'
-import ed2 from '../../assets/projectsImg/ed2.png'
-import ed3 from '../../assets/projectsImg/ed3.png'
-import ed4 from '../../assets/projectsImg/ed4.png'
-import eduCover from '../../assets/projectsImg/eduCover.png'
-
-// Travello project
-import travelloCover from '../../assets/projectsImg/TraveloCover.png'
-import trv1 from '../../assets/projectsImg/trv1.png'
-import trv2 from '../../assets/projectsImg/trv2.png'
-import trv3 from '../../assets/projectsImg/trv3.png'
-
-// Amped project
-import amp1 from '../../assets/projectsImg/amp1.png'
-import amp2 from '../../assets/projectsImg/amp2.png'
-import amp3 from '../../assets/projectsImg/amp3.png'
-import amp4 from '../../assets/projectsImg/amp4.png'
-import amp5 from '../../assets/projectsImg/amp5.png'
-import amp6 from '../../assets/projectsImg/amp6.png'
-import amp7 from '../../assets/projectsImg/amp7.png'
-import ampCover from '../../assets/projectsImg/ampCover.png'
-
-// FlickHub project
-import fh1 from '../../assets/projectsImg/fh1.jpeg'
-import fh2 from '../../assets/projectsImg/fh2.jpeg'
-import fh3 from '../../assets/projectsImg/fh3.jpeg'
-import fh4 from '../../assets/projectsImg/fh4.jpeg'
-import fh5 from '../../assets/projectsImg/fh5.jpeg'
-import flickCover from '../../assets/projectsImg/flickCover.png'
-
-// Enftora project
-import enfCover from '../../assets/projectsImg/enfCover.png'
-import enf1 from '../../assets/projectsImg/enf1.png'
-import enf3 from '../../assets/projectsImg/enf3.png'
-import enf5 from '../../assets/projectsImg/enf5.png'
-import enf6 from '../../assets/projectsImg/enf6.png'
-import enf7 from '../../assets/projectsImg/enf7.png'
-
-// Online Typing project
-import typeCover from '../../assets/projectsImg/type.png'
-
-// tech stack
-import reactN from '../../assets/projectsImg/reactN.png'
-import typescript from '../../assets/projectsImg/typescript.png'
-import node from '../../assets/projectsImg/node.png'
-import nest from '../../assets/projectsImg/NestJS.png'
-import mongo from '../../assets/projectsImg/Mongo.png'
-import firebase from '../../assets/projectsImg/firebase.png'
-import redis from '../../assets/projectsImg/Redis.png'
-import webRTC from '../../assets/projectsImg/webRTC.png'
-import socket from '../../assets/projectsImg/socket.png'
-import gateway from '../../assets/projectsImg/razorpay.png'
-import api from '../../assets/projectsImg/Api.png'
-
 export const projectsList=[
     {
         title:"SPOT",
@@ -72,41 +9,41 @@ export const projectsList=[
             {
                 tech:"React Native",
                 techDescription:"React Native lets you build native apps for iOS and Android using familiar JavaScript and React, saving time and code while delivering platform-specific performance.",
-                techImg:reactN
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
             },
             {
                 tech:"Typescript",
                 techDescription:"TypeScript boosts JavaScript with optional static typing, bringing a power-up of improved code structure, error prevention, and developer confidence, while still playing seamlessly with plain JS.",
-                techImg:typescript
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798645/portfolio/typescript.png'
             },
             {
                 tech:"NestJS",
                 techDescription:"NestJS takes progressive JavaScript principles and builds a powerful Node.js framework for server-side applications, emphasizing scalability, maintainability, and developer experience.",
-                techImg:nest
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798649/portfolio/nest.png'
             },
             {
                 tech:"Redis",
                 techDescription:"Redis fires up your applications with lightning-fast in-memory data storage, acting as a cache, database, or messaging broker, all rolled into one.",
-                techImg:redis
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/redis.png'
             },
             {
                 tech:"MongoDB",
                 techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation.",
-                techImg:mongo
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/mongo.png'
             },
             {
                 tech:"Firebase RTDS",
                 techDescription:"Firebase Realtime Database connects your app to a cloud-hosted, synced database, letting you share data in real-time across users and platforms. It's flexible and secure, keeping your app responsive and data protected.",
-                techImg:firebase
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/firebase.png'
             },
         ],
         img:[
-            {img:spot1},
-            {img:spot2},
-            {img:spot3},
-            {img:spot4},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798661/portfolio/spot1.jpg"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798661/portfolio/spot2.jpg"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798660/portfolio/spot3.jpg"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798660/portfolio/spot4.jpg"},
         ],
-        cover:spotCover,
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798657/portfolio/spotCover.png",
         app:"Mobile app",
         techStack:"Full Stack"
 
@@ -121,41 +58,41 @@ export const projectsList=[
             {
                 tech:"ReactJS",
                 techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
-                techImg:reactN
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
             },
             {
                 tech:"NodeJS",
                 techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end.",
-                techImg:node
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/node.png"
             },
             {
                 tech:"MongoDB",
                 techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation.",
-                techImg:mongo
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/mongo.png"
             },
             {
                 tech:"WebRTC",
                 techDescription:"WebRTC superpowers your web apps with real-time communication magic. No plugins needed, just build in video, voice, and data channels directly into your web pages for seamless, interactive experiences.",
-                techImg:webRTC
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798644/portfolio/webRTC.png"
             },
             {
                 tech:"Socket.io",
                 techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience.",
-                techImg:socket
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798645/portfolio/socket.png"
             },
             {
                 tech:"Razorpay Gateway",
                 techDescription:"Payment gateways bridge the gap between your online business and customers' wallets, handling secure transactions with cards, e-wallets, and other methods, simplifying online payments and boosting sales.",
-                techImg:gateway
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/razorpay.png"
             },
         ],
         img:[
-            {img:ed1},
-            {img:ed2},
-            {img:ed3},
-            {img:ed4},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798667/portfolio/ed1.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798661/portfolio/ed2.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798660/portfolio/ed3.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798659/portfolio/ed4.png"},
         ],
-        cover:eduCover,
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798652/portfolio/edCover.png",
         app:"Web app",
         techStack:"Full Stack"
 
@@ -170,35 +107,35 @@ export const projectsList=[
             {
                 tech:"ReactJS",
                 techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
-                techImg:reactN
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
             },
             {
                 tech:"NodeJS",
                 techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end.",
-                techImg:node
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/node.png"
             },
             {
                 tech:"MongoDB",
                 techDescription:"MongoDB flexes its document-oriented muscles, storing data as JSON-like records, allowing for schema-less freedom and easy data manipulation.",
-                techImg:mongo
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/mongo.png"
             },
             {
                 tech:"Socket.io",
                 techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience.",
-                techImg:socket
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798645/portfolio/socket.png"
             },
             {
                 tech:"Razorpay Gateway",
                 techDescription:"Payment gateways bridge the gap between your online business and customers' wallets, handling secure transactions with cards, e-wallets, and other methods, simplifying online payments and boosting sales.",
-                techImg:gateway
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/razorpay.png"
             },
         ],
         img:[
-            {img:trv1},
-            {img:trv2},
-            {img:trv3},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798641/portfolio/trv1.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798640/portfolio/trv2.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798639/portfolio/trv3.png"},
         ],
-        cover:travelloCover,
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798654/portfolio/traveloCover.png",
         app:"Web app",
         techStack:"Full Stack"
 
@@ -213,30 +150,30 @@ export const projectsList=[
             {
                 tech:"ReactJS",
                 techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
-                techImg:reactN
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
             },
             {
                 tech:"Razorpay Gateway",
                 techDescription:"Payment gateways bridge the gap between your online business and customers' wallets, handling secure transactions with cards, e-wallets, and other methods, simplifying online payments and boosting sales.",
-                techImg:gateway
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/razorpay.png"
             },
             {
                 tech:"Firebase",
                 techDescription:"Firebase fuels your apps with powerful backend services like databases, auth, and storage, hosted on Google's cloud, scaling effortlessly with your needs.",
-                techImg:firebase
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/firebase.png"
             },
 
         ],
         img:[
-            {img:amp1},
-            {img:amp2},
-            {img:amp3},
-            {img:amp4},
-            {img:amp5},
-            {img:amp6},
-            {img:amp7},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798660/portfolio/amp1.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798659/portfolio/amp2.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798659/portfolio/amp3.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798659/portfolio/amp4.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798656/portfolio/amp5.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798657/portfolio/amp6.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798655/portfolio/amp7.png"},
         ],
-        cover:ampCover,
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798652/portfolio/ampCover.png",
         app:"Web app",
         techStack:"Frontend"
     },
@@ -250,27 +187,27 @@ export const projectsList=[
             {
                 tech:"React Native",
                 techDescription:"React Native lets you build native apps for iOS and Android using familiar JavaScript and React, saving time and code while delivering platform-specific performance.",
-                techImg:reactN
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
             },
             {
                 tech:"Typescript",
                 techDescription:"TypeScript boosts JavaScript with optional static typing, bringing a power-up of improved code structure, error prevention, and developer confidence, while still playing seamlessly with plain JS.",
-                techImg:typescript
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798645/portfolio/typescript.png"
             },
             {
                 tech:"Firebase",
                 techDescription:"Firebase fuels your apps with powerful backend services like databases, auth, and storage, hosted on Google's cloud, scaling effortlessly with your needs.",
-                techImg:firebase
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/firebase.png"
             },
         ],
         img:[
-            {img:fh1},
-            {img:fh2},
-            {img:fh3},
-            {img:fh4},
-            {img:fh5},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798653/portfolio/fh1.jpg"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798653/portfolio/fh2.jpg"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798654/portfolio/fh3.jpg"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798652/portfolio/fh4.jpg"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798650/portfolio/fh5.jpg"},
         ],
-        cover:flickCover,
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798653/portfolio/flickCover.png",
         app:"Mobile app",
         techStack:"Frontend"
     },
@@ -284,27 +221,27 @@ export const projectsList=[
             {
                 tech:"React Js",
                 techDescription:"ReactJS builds user interfaces with reusable components, letting you rapidly craft dynamic and interactive web experiences with ease. It simplifies complex interfaces and fuels modern web development.",
-                techImg:reactN
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/gjzujrtmjpq9vunmqghv.png'
             },
             {
                 tech:'API',
                 techDescription:'API, or Application Programming Interface, is a set of rules and protocols that enables different software applications to communicate and interact with each other. Serving as a bridge between various systems, APIs allow developers to access specific features or data from a service, facilitating seamless integration and functionality in software development.',
-                techImg:api
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798640/portfolio/api.png"
             },
             {
                 tech:"Firebase",
                 techDescription:"Firebase fuels your apps with powerful backend services like databases, auth, and storage, hosted on Google's cloud, scaling effortlessly with your needs.",
-                techImg:firebase
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/firebase.png"
             },
         ],
         img:[
-            {img:enf1},
-            {img:enf3},
-            {img:enf5},
-            {img:enf6},
-            {img:enf7},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/enf1.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798648/portfolio/enf3.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798644/portfolio/enf5.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798645/portfolio/enf6.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798644/portfolio/enf7.png"},
         ],
-        cover:enfCover,
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798641/portfolio/enfCover.png",
         app:"Web app",
         techStack:"Frontend"
     },
@@ -318,23 +255,23 @@ export const projectsList=[
             {
                 tech:"NodeJS",
                 techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end.",
-                techImg:node
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/node.png"
             },
             {
                 tech:'API',
                 techDescription:'API, or Application Programming Interface, is a set of rules and protocols that enables different software applications to communicate and interact with each other. Serving as a bridge between various systems, APIs allow developers to access specific features or data from a service, facilitating seamless integration and functionality in software development.',
-                techImg:api
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798640/portfolio/api.png"
             },
             {
                 tech:"Socket.io",
                 techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience.",
-                techImg:socket
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798645/portfolio/socket.png"
             },
         ],
         img:[
             // {img:''},
         ],
-        cover:typeCover,
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798640/portfolio/typeCover.png",
         app:"Web app",
         techStack:"Full Stack"
     },

@@ -30,13 +30,13 @@ function App() {
     <>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/projectDetail" element={<ProjectDetail />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
+          <Route path="" element={<Home />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="project" element={<Project />} />
+          <Route path="projectDetail" element={<ProjectDetail />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
           {/* <Home /> */}
         </Routes>
       </AnimatePresence>
