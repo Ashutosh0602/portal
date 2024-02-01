@@ -1,5 +1,3 @@
-import tnp from '../../assets/projectsImg/tnp.png'
-
 export const experience=[
     {
         title:"Portal Coordinator",
