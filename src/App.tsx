@@ -26,6 +26,7 @@ const About = lazy(() => import("./pages/about/About"));
 
 function App() {
   const location = useLocation();
+
   return (
     <>
       <AnimatePresence mode="wait">

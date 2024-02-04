@@ -38,6 +38,16 @@ function Home() {
     setblogheight(blogREF.current?.clientHeight);
   }, []);
 
+  useEffect(() => {
+    return () => {
+      const update = async () => {
+        await fetch("https://portoflio-backend.onrender.com/");
+      };
+
+      update();
+    };
+  }, []);
+
   function mouseLeave(content: DOMRect | any) {
     content.current = null;
   }
