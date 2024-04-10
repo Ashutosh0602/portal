@@ -1,5 +1,30 @@
 export const projectsList=[
     {
+        title:"NComp",
+        description:"This project is a shell script designed to compress entire Node.js projects efficiently to save space while maintaining accessibility. It offers several features to manage compressed Node.js projects conveniently.",
+        detail:"The Node.js Project Compressor is a shell script designed to efficiently compress entire Node.js projects, providing features for compression, listing, and decompression. To compress a Node.js project directory, users navigate to the project directory and execute the 'ncomp -c' command. For listing contents of an archive, users can run 'ncomp -l' from any directory. Decompression is achieved by running 'ncomp -u filename.zip', where 'filename.zip' is the name of the archive file to be decompressed. Requirements for the tool include a Unix-like operating system, Node.js installed, and a basic understanding of Linux commands. This tool facilitates space-saving compression of Node.js projects while maintaining accessibility for easy navigation and restoration.",
+        github:"https://github.com/Ashutosh0602/NComp",
+        live:"",
+        techUsed:[
+            {
+                tech:"Shell",
+                techDescription:"A shell scripting language is a command-line interpreter that facilitates automating tasks and executing commands in Unix-like operating systems.",
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1712782936/portfolio/Shell.png'
+            },
+            {
+                tech:"NodeJS",
+                techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end.",
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/node.png"
+            },
+        ],
+        img:[
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1712783180/portfolio/NCompCover.png"},
+        ],
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1712783180/portfolio/NCompCover.png",
+        app:"Terminal",
+        techStack:"Linux CD"
+    },
+    {
         title:"SPOT",
         description:"SPOT is a revolutionary car-sharing platform that connects car owners with renters, empowering both to make the most of their vehicles and their time. Whether you're looking for a quick ride across town or a weekend getaway, SPOT puts you in the driver's seat.",
         detail:"Introducing SPOT: Your Key to Unlocking a Car on Every Corner\nNeed a car for a few hours? SPOT has you covered.\nSPOT is a revolutionary car-sharing platform that connects car owners with renters, empowering both to make the most of their vehicles and their time. Whether you're looking for a quick ride across town or a weekend getaway, SPOT puts you in the driver's seat.\n\nHere's how it works:\nFor Renters:\nFind the perfect car: Browse a diverse selection of cars in your area, filtering by location, price, and features to match your needs. Book on the spot: Reserve a car by the hour, with no long-term commitments or hidden fees. Unlock with ease: Use the SPOT app to locate and unlock your car seamlessly. Drive and enjoy: Hit the road with confidence, knowing that insurance and roadside assistance are included. For Owners:\nTurn idle time into income: List your car when you're not using it and earn extra cash. Flexibility at your fingertips: Easily list or delist your car as your schedule changes. Stay in control: Track your car's location and rental status in real-time through the SPOT app. Peace of mind guaranteed: SPOT handles insurance, payment processing, and renter screening for you. Unlock a world of possibilities with SPOT:\nSave money on car ownership Reduce traffic congestion and emissions Experience the convenience of car access without the commitment Enjoy a variety of cars to suit your every need Build a community of shared mobility Join the SPOT revolution and start sharing the ride today!",

@@ -23,6 +23,14 @@ import ExperienceHome from "./experienceHome/ExperienceHome";
 import BlogHome from "./blogHome/BlogHome";
 import ContainerWrap from "../cursor/ContainerWrap";
 
+const update = async () => {
+  await fetch("https://portoflio-backend.onrender.com/").then(() =>
+    console.log("yes")
+  );
+};
+
+update();
+
 function Home() {
   const [screen, setScreen] = useState<number[]>([]);
   document.addEventListener("mouseover", (e) => setScreen([e.x, e.y]));
@@ -38,15 +46,20 @@ function Home() {
     setblogheight(blogREF.current?.clientHeight);
   }, []);
 
-  useEffect(() => {
-    return () => {
-      const update = async () => {
-        await fetch("https://portoflio-backend.onrender.com/");
-      };
+  // useEffect(() => {
+  //   return () => {
+  //     const controller = new AbortController();
+  //     const signal = controller.signal;
 
-      update();
-    };
-  }, []);
+  //     const update = async () => {
+  //       await fetch("https://portoflio-backend.onrender.com/", { signal }).then(
+  //         () => console.log("yes")
+  //       );
+  //     };
+
+  //     update();
+  //   };
+  // }, []);
 
   function mouseLeave(content: DOMRect | any) {
     content.current = null;
@@ -135,7 +148,7 @@ function Home() {
                           <Link
                             target="_blank"
                             className="textlink"
-                            to="https://rb.gy/028xr0"
+                            to="https://shorturl.at/fsJV0"
                           >
                             <IoNewspaperOutline
                               style={{

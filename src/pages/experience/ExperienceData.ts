@@ -10,5 +10,17 @@ export const experience=[
             "Took advantage of additional technologies such as transactional mailers, AWS ( Ec2, S3, Route53, CloudFront) services and Firebase for seamless development and integration.",
         ],
         img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798638/portfolio/tnp.png",
+    },
+    {
+        title:"Freelacnce Developer",
+        company:"OG",
+        link:"https://og-6mat.onrender.com/",
+        added:[
+            "Developed responsive and interactive website for OG startup using ReactJS. Enhanced user engagement through.",
+            "Implemented clean and maintainable code, ensuring efficient performance and scalability of the application.",
+            "Collaborated effectively with cross-functional teams (design, back-end, etc.) to bring the product vision to life.",
+            "Leveraged agile methodologies for continuous development and delivery, adapting to evolving requirements.",
+        ],
+        img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1707220649/portfolio/OGcover.png",
     }
 ]

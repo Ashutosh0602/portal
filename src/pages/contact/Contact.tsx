@@ -10,7 +10,7 @@ function Contact() {
     target: scrollRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["10%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["10%", "-84%"]);
 
   return (
     <>
