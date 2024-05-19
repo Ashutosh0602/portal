@@ -1,5 +1,43 @@
 export const projectsList=[
     {
+        title:"Templor",
+        description:"Templor: A powerful tool for effortless project setup and single-command deployment, streamlining web development with customizable configurations.",
+        detail:"The Templor project is a powerful and flexible tool designed to streamline the setup and deployment of web projects, significantly enhancing development efficiency and enjoyment. It offers effortless project initialization with a variety of optional configurations, allowing developers to choose between TypeScript or JavaScript, and select their preferred styling method, whether it’s SCSS or CSS. Additionally, Templor provides optional integration with TailwindCSS for utility-first styling. One of its standout features is the single command deployment, which simplifies the deployment process by handling everything with one command. This makes the process of getting a project live exceptionally smooth and straightforward. Templor is also highly extensible and customizable, enabling developers to tailor it to the specific requirements of any project, ensuring flexibility and scalability. By simplifying setup with guided prompts and easy configuration options, Templor allows developers to get their projects up and running in minutes. It streamlines development by eliminating repetitive tasks and boilerplate setup, allowing developers to focus on building their applications. With its seamless deployment feature, Templor ensures that applications can go live quickly and effortlessly. Designed to meet the demands of today’s fast-paced development environment, Templor helps developers reduce setup time and concentrate on creating amazing projects, making it an invaluable tool for both new projects and those looking to streamline their deployment processes.",
+        github:"https://github.com/Ashutosh0602/Templor",
+        live:"",
+        techUsed:[
+            {
+                tech:"Redis",
+                techDescription:"Redis fires up your applications with lightning-fast in-memory data storage, acting as a cache, database, or messaging broker, all rolled into one.",
+                techImg:'https://res.cloudinary.com/dlncfovuv/image/upload/v1706798646/portfolio/redis.png'
+            },
+            {
+                tech:"NodeJS",
+                techDescription:"JavaScript unleashed: NodeJS lets you code server-side with familiar JS, bringing web development agility and real-time power to the back end.",
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798647/portfolio/node.png"
+            },
+            {
+                tech:"Docker",
+                techDescription:"Docker is a platform that automates the deployment of applications inside lightweight, portable containers, allowing for consistent development and deployment across different environments.",
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1716135888/portfolio/docker.png"
+            },
+            {
+                tech:"Socket.io",
+                techDescription:"Socket.io sparks real-time conversations between your app and users, enabling instantaneous data exchange and bi-directional communication for a dynamic and responsive experience.",
+                techImg:"https://res.cloudinary.com/dlncfovuv/image/upload/v1706798645/portfolio/socket.png"
+            },
+        ],
+        img:[
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1716135409/portfolio/templorCover.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1716135648/portfolio/templor1.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1716135648/portfolio/templor2.png"},
+            {img:"https://res.cloudinary.com/dlncfovuv/image/upload/v1716135647/portfolio/templor3.png"},
+        ],
+        cover:"https://res.cloudinary.com/dlncfovuv/image/upload/v1716135409/portfolio/templorCover.png",
+        app:"Terminal",
+        techStack:"InquirerJS"
+    },
+    {
         title:"NComp",
         description:"This project is a shell script designed to compress entire Node.js projects efficiently to save space while maintaining accessibility. It offers several features to manage compressed Node.js projects conveniently.",
         detail:"The Node.js Project Compressor is a shell script designed to efficiently compress entire Node.js projects, providing features for compression, listing, and decompression. To compress a Node.js project directory, users navigate to the project directory and execute the 'ncomp -c' command. For listing contents of an archive, users can run 'ncomp -l' from any directory. Decompression is achieved by running 'ncomp -u filename.zip', where 'filename.zip' is the name of the archive file to be decompressed. Requirements for the tool include a Unix-like operating system, Node.js installed, and a basic understanding of Linux commands. This tool facilitates space-saving compression of Node.js projects while maintaining accessibility for easy navigation and restoration.",
