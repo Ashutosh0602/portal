@@ -148,7 +148,7 @@ function Home() {
                           <Link
                             target="_blank"
                             className="textlink"
-                            to="https://shorturl.at/fsJV0"
+                            to="https://rb.gy/5swj7a"
                           >
                             <IoNewspaperOutline
                               style={{
